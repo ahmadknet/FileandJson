@@ -40,7 +40,7 @@ export class AppComponent {
 
     formData.append('avatarphoto', this.myForm.get('fileSource').value);
 
-    this.http.post('http://localhost:44359/api/Reg/Registration', formData)
+    this.http.post('http://173.248.132.126:85/api/Reg/Registration', formData)
       .subscribe(res => {
         console.log(res);
         alert('Uploaded Successfully.');
